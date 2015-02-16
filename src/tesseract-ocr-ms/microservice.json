@@ -1,0 +1,8 @@
+﻿{
+	"$schema": "http://json-schema.org/schemas/2014-11-01/apiapp.json#",
+	"id": "Tesseract.OCR",
+	"version": "0.0.5",
+	"authors": "Wade Wegner",
+	"description": "Simple OCR API using the Tesseract library",
+	"name": "Tesseract.OCR"
+}

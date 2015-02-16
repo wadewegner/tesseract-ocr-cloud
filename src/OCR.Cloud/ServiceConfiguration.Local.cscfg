@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="OCR.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="OCR.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="wadewegner" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCED9zba/fjX+sQdxRHcWKZzswDQYJKoZIhvcNAQEBBQAEggEAA6kETUzZZQVZZVe1KWIErfSdoZksb7UP4Fbu7jhTozTBSOflExEyH/udvJk4FvXmYKvlGi4pueuK2d1M3bz61u4dDNIhtIt7Jx2YTD3V7t2v3kaqY8aZ2gaY9pL9WKaS72q1JcFiAunIdEQQvxXO5k5zXH1x0IRd19bWmn5DGzf76LYyVM0uDMukWY2PD0BuW0VtF3ROieaPvzwShDQxI0DK/mU0TzlQCTenLbxqlRHBjZrGCCNvF/EUip0ug+ZIhpDaBApjKw8FuAhLZR2oVqN6RqIJO5OhSLSqUFkv7WbbXRaGEjzaygiEtzIN8F2OoFR3kTv/pFmqWsm1eTeDlTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECMMefm3D5zBxgBCk5vsnVUc9u41XVmlYuuLk" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-02-15T23:59:59.0000000-07:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="92C5393FCDE77274DF5E92F90EF1FCB29703B3C5" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

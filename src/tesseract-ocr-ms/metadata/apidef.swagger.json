@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "v1",
+        "title": "OCR.Web"
+    },
+    "host": "ocrweb2.cloudapp.net:80",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/api/Ocr": {
+            "post": {
+                "tags": [
+                    "Ocr"
+                ],
+                "operationId": "Ocr_PostFormData",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        }
+    },
+    "definitions": {}
+}
